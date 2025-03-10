@@ -4,7 +4,7 @@ function Specialists() {
   return (
     <div
       className="relative h-screen w-full bg-cover bg-center flex items-center justify-center"
-      style={{ backgroundImage: "url(./src/assets/images/animales.jpeg)" }}
+      style={{ backgroundImage: "url(./src/assets/animales.jpeg)" }}
     >
       <div
         className="absolute inset-0 bg-black opacity-50"
@@ -15,7 +15,7 @@ function Specialists() {
         s
         <div className="relative ">
           <img
-            src="./src/assets/images/veterinaria.jpeg"
+            src="./src/assets/veterinaria.jpeg"
             alt="Veterinarios"
             className="w-96 h-auto"
           />
@@ -32,7 +32,7 @@ function Specialists() {
         </div>
         <div className="relative">
           <img
-            src="./src/assets/images/veterinario.jpeg"
+            src="./src/assets/veterinario.jpeg"
             alt="Veterinarios"
             className="w-96 h-auto"
           />

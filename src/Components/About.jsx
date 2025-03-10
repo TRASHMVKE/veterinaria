@@ -16,7 +16,7 @@ function About() {
         <div className="flex">
           <div className="md:w-2/3 flex flex-col md:flex-row items-center bg-white shadow-lg p-6 rounded-lg">
             <img
-              src="./src/assets/images/imagen1.jpg"
+              src="./src/assets/imagen1.jpg"
               alt=""
               className="w-full md:w-1/3 rounded-lg shadow-md "
             />

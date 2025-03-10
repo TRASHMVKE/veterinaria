@@ -19,7 +19,7 @@ function Services() {
 
             <div>
               <img
-                src="./src/assets/images/cirugia.jpeg"
+                src="./src/assets/cirugia.jpeg"
                 className="w-20"
                 alt=""
               />
@@ -33,7 +33,7 @@ function Services() {
 
             <div>
               <img
-                src="./src/assets/images/cirugia.jpeg"
+                src="./src/assets/cirugia.jpeg"
                 className="w-20"
                 alt=""
               />
@@ -47,7 +47,7 @@ function Services() {
 
             <div>
               <img
-                src="./src/assets/images/cirugia.jpeg"
+                src="./src/assets/cirugia.jpeg"
                 className="w-20"
                 alt=""
               />
@@ -61,7 +61,7 @@ function Services() {
 
             <div>
               <img
-                src="./src/assets/images/cirugia.jpeg"
+                src="./src/assets/cirugia.jpeg"
                 className="w-20"
                 alt=""
               />

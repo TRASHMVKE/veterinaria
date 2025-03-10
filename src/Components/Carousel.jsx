@@ -4,9 +4,9 @@ import Slider from 'react-slick';
 function Carousel() {
 
     const images = [
-        '/src/assets/images/imagen1.jpg',
-        '/src/assets/images/imagen2.jpg',
-        '/src/assets/images/imagen3.jpeg'
+        './src/assets/imagen1.jpg',
+        './src/assets/imagen2.jpg',
+        './src/assets/imagen3.jpeg'
       ];
 
     const settings = {
