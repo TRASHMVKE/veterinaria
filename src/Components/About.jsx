@@ -1,6 +1,7 @@
 import React from "react";
 import { Accordion, Card, Button } from "react-bootstrap";
 import { Element } from "react-scroll";
+import imagen1 from "../assets/imagen1.jpg";
 
 function About() {
   return (
@@ -16,7 +17,7 @@ function About() {
         <div className="flex">
           <div className="md:w-2/3 flex flex-col md:flex-row items-center bg-white shadow-lg p-6 rounded-lg">
             <img
-              src="./src/assets/imagen1.jpg"
+              src={imagen1}
               alt=""
               className="w-full md:w-1/3 rounded-lg shadow-md "
             />

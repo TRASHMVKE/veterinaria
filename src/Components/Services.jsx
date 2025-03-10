@@ -2,6 +2,12 @@ import React from "react";
 import { MdDateRange } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { Element } from "react-scroll";
+
+import cirugia from "../assets/cirugia.jpeg";
+import vacunacion from "../assets/vacuna.jpeg";
+import diagnostico from "../assets/diagnostico.jpeg";
+import hospitalizacion from "../assets/hospitalizacion.jpeg";
+
 function Services() {
   return (
     <Element name="services">
@@ -18,11 +24,7 @@ function Services() {
             {/* Servicios*/}
 
             <div>
-              <img
-                src="./src/assets/cirugia.jpeg"
-                className="w-20"
-                alt=""
-              />
+              <img src={cirugia} className="w-20" alt="" />
               <h1 className="font-bold">Cirugía veterinaria avanzada</h1>
               <p className="text-stone-400">
                 Realizamos procedimientos quirúrgicos avanzados, incluyendo
@@ -32,11 +34,17 @@ function Services() {
             </div>
 
             <div>
-              <img
-                src="./src/assets/cirugia.jpeg"
-                className="w-20"
-                alt=""
-              />
+              <img src={vacunacion} className="w-20" alt="" />
+              <h1 className="font-bold">Vacunación y desparasitación</h1>
+              <p className="text-stone-400">
+                Programas completos de vacunación y desparasitación adaptados a
+                las necesidades específicas de cada mascota, garantizando su
+                protección contra enfermedades y parásitos comunes.
+              </p>
+            </div>
+
+            <div>
+              <img src={diagnostico} className="w-20" alt="" />
               <h1 className="font-bold">Cirugía veterinaria avanzada</h1>
               <p className="text-stone-400">
                 Realizamos procedimientos quirúrgicos avanzados, incluyendo
@@ -46,25 +54,7 @@ function Services() {
             </div>
 
             <div>
-              <img
-                src="./src/assets/cirugia.jpeg"
-                className="w-20"
-                alt=""
-              />
-              <h1 className="font-bold">Cirugía veterinaria avanzada</h1>
-              <p className="text-stone-400">
-                Realizamos procedimientos quirúrgicos avanzados, incluyendo
-                cirugías de emergencia y electivas. Contamos con tecnología de
-                punta y un equipo de cirujanos altamente calificados.
-              </p>
-            </div>
-
-            <div>
-              <img
-                src="./src/assets/cirugia.jpeg"
-                className="w-20"
-                alt=""
-              />
+              <img src={hospitalizacion} className="w-20" alt="" />
               <h1 className="font-bold">Cirugía veterinaria avanzada</h1>
               <p className="text-stone-400">
                 Realizamos procedimientos quirúrgicos avanzados, incluyendo
