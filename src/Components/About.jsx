@@ -1,25 +1,27 @@
 import React from "react";
-import { Accordion, Card, Button } from "react-bootstrap";
 import { Element } from "react-scroll";
 import imagen1 from "../assets/imagen1.jpg";
 
 function About() {
   return (
     <Element name="about">
-      <section className="p-8  h-100">
-        <div className="flex ">
+      <section className="p-8 w-full bg-gray-100">
+        {/* Título */}
+        <div className="flex justify-center md:justify-start mb-6">
           <h1 className="text-4xl font-bold uppercase text-black relative">
-            nuestra clinica veterinaria
-            <span className="block  h-1 w-20 bg-blue-500 absolute bottom-0  left-0"></span>
+            Nuestra clínica veterinaria
+            <span className="block h-1 w-20 bg-blue-500 absolute -bottom-2 left-0"></span>
           </h1>
         </div>
-        {/* Imagen y descripción */}
-        <div className="flex">
-          <div className="md:w-2/3 flex flex-col md:flex-row items-center bg-white shadow-lg p-6 rounded-lg">
+
+        {/* Contenedor principal */}
+        <div className="flex flex-col md:flex-row gap-6">
+          {/* Imagen y descripción */}
+          <div className="md:w-2/3 bg-white shadow-lg p-6 rounded-lg flex flex-col md:flex-row items-center">
             <img
               src={imagen1}
-              alt=""
-              className="w-full md:w-1/3 rounded-lg shadow-md "
+              alt="Nuestra clínica"
+              className="w-full md:w-1/3 rounded-lg shadow-md"
             />
             <div className="md:w-2/3 p-6">
               <h2 className="text-2xl font-semibold mb-2">
@@ -34,14 +36,13 @@ function About() {
                 garantiza la salud y seguridad de las mascotas, sino que también
                 celebre la conexión especial que compartimos con ellos.
               </p>
-              <span className="text-green-500 font-semibold text-lg">
-                Asvet
-              </span>
+              <span className="text-green-500 font-semibold text-lg">Asvet</span>
             </div>
           </div>
+
           {/* Sección derecha */}
-          <div className="md:w-1/3  p-4">
-            <div className="bg-green-500 text-white p-3 rounded-t-lg text-lg-font-semibold">
+          <div className="md:w-1/3 p-4">
+            <div className="bg-green-500 text-white p-3 rounded-t-lg text-lg font-semibold">
               Legado
             </div>
             <div className="bg-white shadow-md p-4 rounded-b-lg">
@@ -53,8 +54,9 @@ function About() {
                 con tonometría, electrorretinografía y cirugía intraocular.
               </p>
             </div>
+
             {/* Opciones de servicios */}
-            <div className="mt-4">
+            <div className="mt-4 space-y-2">
               {[
                 "CUIDADO INTEGRAL",
                 "PARTICIPACIÓN DOCENTE",
@@ -62,7 +64,7 @@ function About() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-gray-800 text-white p-3 mt-2 flex justify-between items-center rounded-md cursor-pointer"
+                  className="bg-gray-800 text-white p-3 flex justify-between items-center rounded-md cursor-pointer hover:bg-gray-700 transition duration-200"
                 >
                   {item}
                   <span className="text-xl">+</span>

@@ -1,54 +1,58 @@
 import React from "react";
+import veterinaria from "../assets/veterinaria.jpeg";
+import veterinario from "../assets/veterinario.jpeg";
+import animales from "../assets/animales.jpeg"; // Importación correcta de imagen de fondo
 
 function Specialists() {
   return (
-    <div
-      className="relative h-screen w-full bg-cover bg-center flex items-center justify-center"
-      style={{ backgroundImage: "url(./src/assets/animales.jpeg)" }}
+    <section
+      className="relative h-screen w-full flex items-center justify-center bg-cover bg-center"
+      style={{ backgroundImage: `url(${animales})` }}
     >
-      <div
-        className="absolute inset-0 bg-black opacity-50"
-        style={{ filter: "brightness(0.8)" }}
-      ></div>
+      {/* Capa oscura de fondo */}
+      <div className="absolute inset-0 bg-black/50"></div>
 
-      <div className="absolute flex items-center justify-center gap-8">
-        s
-        <div className="relative ">
+      {/* Contenedor principal */}
+      <div className="relative flex flex-col md:flex-row items-center gap-8 px-6">
+        {/* Especialista 1 */}
+        <div className="relative max-w-xs md:max-w-sm">
           <img
-            src="./src/assets/veterinaria.jpeg"
-            alt="Veterinarios"
-            className="w-96 h-auto"
+            src={veterinaria}
+            alt="Dra. Yamiley de la Cruz"
+            className="w-full h-auto rounded-lg shadow-lg"
           />
-          <div className="absolute bottom-0 left-0 w-full p-2 backdrop-blur-xs  text-black">
+          <div className="absolute bottom-0 left-0 w-full p-4 bg-black/60 text-white rounded-b-lg">
             <p>
               <strong>Dra. Yamiley de la Cruz</strong>
               <br />
               Oftalmóloga veterinaria
               <br />
-              Con más de 15 años de experiencia, se especializa en medicina
-              veterinaria interna y oftalmología especializada.
+              Con más de 15 años de experiencia en medicina veterinaria interna
+              y oftalmología especializada.
             </p>
           </div>
         </div>
-        <div className="relative">
+
+        {/* Especialista 2 */}
+        <div className="relative max-w-xs md:max-w-sm">
           <img
-            src="./src/assets/veterinario.jpeg"
-            alt="Veterinarios"
-            className="w-96 h-auto"
+            src={veterinario}
+            alt="Dr. Javier Pineda Figari"
+            className="w-full h-auto rounded-lg shadow-lg"
           />
-          <div className="absolute bottom-0 left-0 w-full p-2  backdrop-blur-xs  bg-opacity-75 text-black">
-            <p> 
+          <div className="absolute bottom-0 left-0 w-full p-4 bg-black/60 text-white rounded-b-lg">
+            <p>
               <strong>Dr. Javier Pineda Figari</strong>
               <br />
               Cirujano veterinario
               <br />
-              Más de 15 años de experiencia en la cirugía de tejidos blandos /
-              ortopedia, y consulta reproductiva especializada.
+              Más de 15 años de experiencia en cirugía de tejidos blandos,
+              ortopedia y consulta reproductiva especializada.
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
